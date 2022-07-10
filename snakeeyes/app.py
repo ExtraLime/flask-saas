@@ -15,7 +15,7 @@ def create_app(settings_override=None):
     app.config.from_pyfile('settings.py', silent=True)
     if settings_override:
         app.config.update(settings_override)
-        
+
     app.register_blueprint(page)
 
     return app
